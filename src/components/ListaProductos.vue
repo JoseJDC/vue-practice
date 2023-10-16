@@ -3,12 +3,11 @@ import { Producto } from "../models/Producto";
 import { defineProps } from "vue";
 
 const props = defineProps({ productos: Array<Producto> });
-const emits = defineEmits(['eliminar']);
+const emits = defineEmits(["eliminar"]);
 
 const eliminar = (prod: Producto) => {
-  emits('eliminar', prod)
-}
-
+  emits("eliminar", prod);
+};
 </script>
 
 <template>
